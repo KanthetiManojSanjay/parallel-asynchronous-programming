@@ -47,4 +47,10 @@ public class CompletableFutureHelloWorldTest {
         timeTaken();
     }
 
+    @Test
+    public void helloWorld_anyOf_Test() {
+        String result = completableFutureHelloWorld.anyOf();
+        assertEquals("hello world", result);
+    }
+
 }
