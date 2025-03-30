@@ -76,14 +76,14 @@ public class CompletableFutureHelloWorld {
         //rest call
         CompletableFuture<String> restCall = CompletableFuture.supplyAsync(() -> {
             delay(2000);
-            log("response from db");
+            log("response from restCall");
             return "hello world";
         });
 
         //soap call
         CompletableFuture<String> soapCall = CompletableFuture.supplyAsync(() -> {
             delay(3000);
-            log("response from db");
+            log("response from soapCall");
             return "hello world";
         });
 
